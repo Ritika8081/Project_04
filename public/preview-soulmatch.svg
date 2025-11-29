@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="680" viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff7fb"/>
+      <stop offset="1" stop-color="#fef6e6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff0f6"/>
+      <stop offset="1" stop-color="#f3e8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0b1220" />
+  <g transform="translate(80,60)">
+    <rect width="420" height="560" rx="20" fill="#0f1724"/>
+    <rect x="18" y="18" width="384" height="524" rx="14" fill="#071126"/>
+
+    <!-- Header -->
+    <rect x="32" y="36" width="340" height="18" rx="6" fill="#e9d5ff" opacity="0.12"/>
+
+    <!-- Card 1 -->
+    <rect x="32" y="78" width="340" height="110" rx="12" fill="url(#g2)" stroke="#e9d5ff" opacity="0.95"/>
+    <rect x="48" y="96" width="60" height="60" rx="8" fill="#fff" opacity="0.9"/>
+    <rect x="120" y="98" width="220" height="18" rx="6" fill="#111827" opacity="0.9"/>
+    <rect x="120" y="124" width="180" height="12" rx="6" fill="#111827" opacity="0.6"/>
+
+    <!-- Card 2 -->
+    <rect x="32" y="202" width="340" height="110" rx="12" fill="#ffffff" opacity="0.03"/>
+    <rect x="48" y="220" width="292" height="14" rx="6" fill="#ffffff" opacity="0.12"/>
+    <rect x="48" y="244" width="220" height="10" rx="6" fill="#ffffff" opacity="0.08"/>
+
+    <!-- Bottom actions -->
+    <rect x="32" y="336" width="152" height="38" rx="20" fill="#c026d3" opacity="0.95"/>
+    <rect x="200" y="336" width="152" height="38" rx="20" fill="#065f46" opacity="0.9"/>
+
+    <!-- smaller list -->
+    <rect x="32" y="392" width="340" height="128" rx="12" fill="#ffffff" opacity="0.02"/>
+  </g>
+
+  <!-- Right-side decorative constellation -->
+  <g transform="translate(600,100)">
+    <circle cx="120" cy="80" r="80" fill="rgba(255,255,255,0.02)"/>
+    <path d="M40 40 C70 20, 140 20, 170 40" stroke="#fef3c7" stroke-width="2" fill="none" opacity="0.6"/>
+    <circle cx="60" cy="60" r="4" fill="#fff0f6"/>
+    <circle cx="140" cy="40" r="3" fill="#f0fdf4"/>
+    <circle cx="100" cy="100" r="3" fill="#eef2ff"/>
+  </g>
+
+  <text x="96" y="660" font-family="Inter, Arial" font-size="12" fill="#9CA3AF">Preview illustration — not a real screenshot</text>
+</svg>

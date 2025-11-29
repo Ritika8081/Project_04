@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/SoulConnect/app/page.tsx"],"sourcesContent":["\"use client\"\r\nimport Link from 'next/link'\r\nimport React from 'react'\r\n\r\nexport default function LandingPage() {\r\n  return (\r\n    <div className=\"max-w-3xl w-full card-fade mx-auto text-center p-8\">\r\n      <h1 className=\"text-4xl font-bold text-[#3b0764]\">Heal, Understand, Grow — Love Smarter, Not Harder.</h1>\r\n      <p className=\"soft-microcopy mt-2\">You are seen. This is a gentle space to explore connection, reflect on yourself, and learn small, practical ways to grow every day.</p>\r\n\r\n      <div className=\"mt-6\">\r\n        <Link href=\"/onboarding\" className=\"large-cta\">Start Your Journey</Link>\r\n      </div>\r\n\r\n      <div className=\"mt-4 text-sm text-gray-700\">No account needed • Private & ephemeral • All reflections stay on your device</div>\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;;AACA;AADA;;;AAIe,SAAS;IACtB,qBACE,6LAAC;QAAI,WAAU;;0BACb,6LAAC;gBAAG,WAAU;0BAAoC;;;;;;0BAClD,6LAAC;gBAAE,WAAU;0BAAsB;;;;;;0BAEnC,6LAAC;gBAAI,WAAU;0BACb,cAAA,6LAAC,0KAAI;oBAAC,MAAK;oBAAc,WAAU;8BAAY;;;;;;;;;;;0BAGjD,6LAAC;gBAAI,WAAU;0BAA6B;;;;;;;;;;;;AAGlD;KAbwB","debugId":null}}]
+}
