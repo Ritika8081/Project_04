@@ -290,6 +290,10 @@ img, video {
   margin-bottom: .75rem;
 }
 
+.ml-0 {
+  margin-left: 0;
+}
+
 .ml-2 {
   margin-left: .5rem;
 }
@@ -484,6 +488,10 @@ img, video {
   animation: 2s cubic-bezier(.4, 0, .6, 1) infinite pulse;
 }
 
+.resize {
+  resize: both;
+}
+
 .list-inside {
   list-style-position: inside;
 }
@@ -643,10 +651,6 @@ img, video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-white\/10 {
-  background-color: #ffffff1a;
 }
 
 .bg-white\/50 {
@@ -943,10 +947,6 @@ img, video {
   padding-bottom: .5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pt-14 {
   padding-top: 3.5rem;
 }
@@ -1103,11 +1103,6 @@ img, video {
   color: rgb(30 41 59 / var(--tw-text-opacity, 1));
 }
 
-.text-slate-900 {
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity, 1));
-}
-
 .text-transparent {
   color: #0000;
 }
@@ -1119,11 +1114,6 @@ img, video {
 
 .text-white\/80 {
   color: #fffc;
-}
-
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -1418,6 +1408,20 @@ body:before {
   display: flex;
 }
 
+.mobile-toggle {
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  display: none;
+}
+
+.mobile-toggle svg {
+  display: block;
+}
+
 .header-cta {
   color: var(--sc-purple);
   background: linear-gradient(90deg, #fff, #fff);
@@ -1441,6 +1445,51 @@ body:before {
   .nav, .logo-text {
     display: none;
   }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .mobile-nav {
+    z-index: 60;
+    background: linear-gradient(#0f1724fa, #3b0764f2);
+    border-radius: 12px;
+    position: fixed;
+    inset: 64px 12px auto;
+    overflow: hidden;
+    box-shadow: 0 30px 60px #0f172499;
+  }
+
+  .mobile-nav-inner {
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+    display: flex;
+  }
+
+  .mobile-nav .nav-link {
+    color: #fffffffa;
+    background: none;
+    padding: 12px 10px;
+    font-size: 1rem;
+  }
+
+  .mobile-nav .nav-link.active {
+    box-shadow: none;
+    border-left: 3px solid var(--sc-gold);
+    padding-left: 10px;
+  }
+
+  .mobile-cta {
+    text-align: center;
+    width: 100%;
+    margin-top: 8px;
+    display: block;
+  }
 }
 
 .hero-plate {
@@ -1463,6 +1512,32 @@ body:before {
 
 .hero-lead {
   color: #374151;
+}
+
+.hero-plate {
+  color: #0f1724;
+}
+
+.hero-plate .hero-eyebrow {
+  color: var(--sc-gold);
+}
+
+.hero-plate .hero-title {
+  color: var(--sc-purple);
+}
+
+.hero-plate .hero-lead, .hero-plate p, .hero-plate .soft-microcopy {
+  color: #374151;
+}
+
+.hero-plate .tag {
+  color: #0f1724;
+  background: #ffffff1f;
+  border-radius: 9999px;
+  align-items: center;
+  gap: .5rem;
+  padding: .25rem .5rem;
+  display: inline-flex;
 }
 
 .features-grid {
@@ -1551,11 +1626,81 @@ body:before {
 
 @media (max-width: 760px) {
   .hero-graphic {
-    width: 160px;
+    width: 140px;
+    max-width: 40vw;
   }
 
   .floating-bubble {
     display: none;
+  }
+
+  .hero-plate {
+    color: #fff;
+    background: linear-gradient(#3b07641f, #f6c66708);
+    padding: 20px;
+  }
+
+  .hero-plate > div {
+    display: block;
+  }
+
+  .hero-plate .hero-eyebrow {
+    color: #f6c667;
+    font-size: .85rem;
+  }
+
+  .hero-plate .hero-title {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.08;
+  }
+
+  .hero-plate .hero-lead, .hero-plate p {
+    color: #fffffff2;
+    font-size: .95rem;
+  }
+
+  .hero-plate .tag {
+    color: #fff;
+    background: #ffffff0f;
+    margin: 2px;
+    padding: 6px 8px;
+  }
+
+  .hero-plate .large-cta {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-plate .btn, .hero-plate .secondary-cta {
+    width: 100%;
+  }
+
+  .hero-plate .mt-6 {
+    margin-top: .6rem;
+  }
+
+  .hero-plate .mt-10 {
+    margin-top: .8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 1.45rem;
+  }
+
+  .hero-plate {
+    padding: 16px;
+  }
+
+  .card-fade {
+    padding: 12px;
+  }
+
+  .large-cta {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
 
@@ -1575,6 +1720,14 @@ body:before {
 }
 
 @media (min-width: 640px) {
+  .sm\:ml-3 {
+    margin-left: .75rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0;
+  }
+
   .sm\:w-auto {
     width: auto;
   }

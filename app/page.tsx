@@ -22,26 +22,23 @@ export default function LandingPage() {
             Not predictions — real guidance for real feelings.
           </p>
 
-          <div className="mt-6 flex gap-3">
+          <div className="mt-6 flex flex-col sm:flex-row gap-3 items-start sm:items-center">
             <Link href="/onboarding" className="large-cta">
               ✨ Start Your Journey
             </Link>
-            <Link href="/dashboard?demo=true" className="secondary-cta">
+            <Link href="/dashboard?demo=true" className="btn btn-secondary">
               Try a Demo First
             </Link>
+            <p className="text-xs text-slate-700 mt-3 sm:mt-0 ml-0 sm:ml-3">No login • Nothing saved • Safe space to explore</p>
           </div>
-
-          <p className="text-xs text-slate-600 mt-3">
-            No login • Nothing saved • Safe space to explore
-          </p>
 
           <div className="mt-10">
             <p className="text-sm text-slate-700 font-medium">People usually come here when they feel:</p>
             <div className="flex gap-3 mt-2 flex-wrap text-xs">
-              <span className=" bg-white/10 text-slate-900">🥺 Confused in love</span>
-              <span className=" bg-white/10 text-slate-800">💕 Want deeper connection</span>
-              <span className=" bg-white/10 text-slate-800">💔 Healing after conflict</span>
-              <span className=" bg-white/10 text-slate-800">🌱 Ready to grow</span>
+              <span className="tag">🥺 Confused in love</span>
+              <span className="tag">💕 Want deeper connection</span>
+              <span className="tag">💔 Healing after conflict</span>
+              <span className="tag">🌱 Ready to grow</span>
             </div>
           </div>
         </div>
